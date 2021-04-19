@@ -949,21 +949,18 @@ a:focus {
     margin-right: 30px;
     flex-basis: calc((100% - 2 * 30px) / 2);
   }
-  .widget__form-part .widget__join {
-    text-align: center;
-  }
-  .button-footer {
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .widget__form-part {
-    margin-left: auto;
-    margin-right: auto;
-  }
 }
 
 @media screen and (min-width: 1200px) {
+  .widget {
+    display: flex;
+    align-items: baseline;
+  }
+  .widget__part {
+    display: block;
+    margin-right: 30px;
+    flex-basis: calc((50% - 45px) / 2);
+  }
   .widget__form-part {
     display: block;
     flex-basis: calc(50%-15px);
