@@ -593,7 +593,7 @@ a:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
 }
 
 .social-list__item {
@@ -603,6 +603,12 @@ a:focus {
 
 .social-list__item:not(:last-child) {
   margin-right: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+  .social-list {
+    padding-bottom: 30px;
+  }
 }
 
 .social-list__link {

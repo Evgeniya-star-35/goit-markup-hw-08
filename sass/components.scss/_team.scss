@@ -86,7 +86,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
 
   &__item {
     width: 44px;
@@ -97,6 +97,11 @@
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .social-list {
+    padding-bottom: 30px;
+  }
+}
 .social-list__link {
   @include centeredFlex(flex);
   width: 100%;
