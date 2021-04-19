@@ -1,11 +1,16 @@
 .contacts {
-  display: flex;
-  justify-content: center;
   margin-left: auto;
+}
 
-  .contacts__item:not(:last-child) {
-    margin-right: 30px;
+@media screen and (min-width: 1200px) {
+  .contacts {
+    display: flex;
+    justify-content: center;
   }
+}
+
+.contacts__item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .contacts__link {
