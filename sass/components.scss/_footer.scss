@@ -1,6 +1,8 @@
 .section-footer {
+  width: 480px;
   padding-top: 60px;
   padding-bottom: 60px;
+  text-align: center;
   background-color: $bg-hero-color;
 
   &__logo {
@@ -36,6 +38,7 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  text-align: center;
   text-transform: uppercase;
   color: $button-hero-text-color;
 }
@@ -47,7 +50,6 @@
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
-  margin-right: 12px;
   border-radius: 4px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   @include bordered(rgba(255, 255, 255, 0.3));
@@ -75,6 +77,9 @@
   border: none;
   background-color: $accent-color;
   cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: timing-function;
@@ -99,28 +104,33 @@
 }
 
 @media screen and (min-width: 768px) {
+  .section-footer {
+    width: 768px;
+  }
+
   .widget {
     display: flex;
+    align-items: baseline;
     flex-wrap: wrap;
-    align-items: center;
+    justify-content: space-between;
+    margin-right: -30px;
   }
   .widget__part {
     display: block;
     margin-right: 30px;
     flex-basis: calc((100% - 2 * 30px) / 2);
   }
-  // .widget__form-part .widget__join {
-  //   text-align: center;
-  // }
-  // .button-footer {
-  //   margin-top: 20px;
-  //   margin-left: auto;
-  //   margin-right: auto;
-  // }
-  // .widget__form-part {
-  //   margin-left: auto;
-  //   margin-right: auto;
-  // }
+  .widget__form-part .widget__join {
+    text-align: center;
+  }
+  .widget__join {
+    margin-top: 0;
+  }
+
+  .widget__form-part {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -155,7 +165,7 @@
 
 .footer-social {
   display: flex;
-  justify-items: flex-start;
+  justify-content: center;
 }
 .footer-social__item {
   width: 44px;
