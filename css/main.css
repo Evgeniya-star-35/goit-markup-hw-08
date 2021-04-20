@@ -368,11 +368,11 @@ a:focus {
   height: 50px;
   margin-right: auto;
   margin-left: auto;
+  color: #ffffff;
+  background-color: #2196f3;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: 1px solid transparent;
-  color: #ffffff;
-  background-color: #2196f3;
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -835,8 +835,28 @@ a:focus {
 .section-footer {
   padding-top: 60px;
   padding-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
   background-color: #2f303a;
+}
+
+@media screen and (min-width: 480px) {
+  .section-footer {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section-footer {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-footer {
+    width: 1200px;
+  }
 }
 
 .section-footer__logo {
@@ -881,7 +901,6 @@ a:focus {
 }
 
 .footer-form__input {
-  width: 450px;
   height: 50px;
   font-size: 16px;
   line-height: 1.25;
@@ -895,6 +914,24 @@ a:focus {
   background-color: #2f303a;
 }
 
+@media screen and (min-width: 480px) {
+  .footer-form__input {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-form__input {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form__input {
+    width: 358px;
+  }
+}
+
 .footer-form__text::placeholder {
   font-size: 16px;
   line-height: 1.25;
@@ -905,7 +942,7 @@ a:focus {
 .button-footer {
   display: flex;
   align-items: center;
-  width: 200px;
+  max-width: 200px;
   height: 50px;
   margin: 0;
   padding: 10px 28px;
@@ -983,11 +1020,6 @@ a:focus {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .section-footer {
-    width: 768px;
-    margin-right: auto;
-    margin-left: auto;
-  }
   .widget {
     display: flex;
     align-items: baseline;
@@ -1008,12 +1040,6 @@ a:focus {
 }
 
 @media screen and (min-width: 1200px) {
-  .section-footer {
-    width: 1200px;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: left;
-  }
   .widget {
     display: flex;
     align-items: baseline;
@@ -1028,15 +1054,12 @@ a:focus {
     display: block;
     flex-basis: calc(50%-15px);
   }
-  .widget__form-part .widget__join {
-    text-align: left;
+  .widget__join {
+    display: block;
+    margin-bottom: 20px;
   }
   .footer-form {
     display: inline-flex;
-  }
-  .footer-form__input {
-    width: 358px;
-    height: 50px;
   }
   .button-footer {
     margin-top: 0;
