@@ -9,7 +9,7 @@
   letter-spacing: 0.03em;
   text-decoration: none;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop-breakpoints) {
     font-size: 26px;
     line-height: 1.17;
   }

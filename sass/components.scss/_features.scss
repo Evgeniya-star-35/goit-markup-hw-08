@@ -2,7 +2,7 @@
   padding-top: 60px;
   padding-bottom: 0;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop-breakpoints) {
     padding-top: 94px;
   }
 }
@@ -10,7 +10,7 @@
   margin-bottom: 30px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $tablet-breakpoints) {
   .features {
     display: flex;
     flex-wrap: wrap;
@@ -24,7 +24,7 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: $desktop-breakpoints) {
   .features {
     display: flex;
     margin-right: -30px;

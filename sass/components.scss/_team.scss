@@ -1,5 +1,5 @@
 .team {
-  width: 480px;
+  min-width: 480px;
   background-color: $secondary-background-color;
 }
 .team-cardset__item {
@@ -13,9 +13,9 @@
   margin-bottom: 30px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $tablet-breakpoints) {
   .team {
-    width: 768px;
+    min-width: 768px;
   }
   .team-cardset {
     display: flex;
@@ -35,7 +35,10 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: $desktop-breakpoints) {
+  .team {
+    min-width: 1200px;
+  }
   .team-cardset {
     display: flex;
     margin-right: -30px;
@@ -101,7 +104,7 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: $desktop-breakpoints) {
   .social-list {
     padding-bottom: 30px;
   }

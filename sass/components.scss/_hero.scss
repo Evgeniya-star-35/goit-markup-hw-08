@@ -3,11 +3,6 @@
   padding-top: 118px;
   padding-bottom: 118px;
   text-align: center;
-
-  @media screen and (min-width: 1200px) {
-    padding-top: 200px;
-    padding-bottom: 200px;
-  }
 }
 .hero__overlay {
   width: 480px;
@@ -22,18 +17,7 @@
     url(../images/foto3/hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
-
-  @media screen and (min-width: 768px) {
-    width: 768px;
-    height: 400px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    max-width: 1600px;
-    height: 600px;
-  }
 }
-
 .hero__title {
   max-width: 360px;
   margin: 0 auto;
@@ -45,8 +29,24 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
+}
 
-  @media screen and (min-width: 1200px) {
+@media screen and (min-width: $tablet-breakpoints) {
+  .hero__overlay {
+    min-width: 768px;
+    height: 400px;
+  }
+}
+@media screen and (min-width: $desktop-breakpoints) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+  .hero__overlay {
+    min-width: 1600px;
+    height: 600px;
+  }
+  .hero__title {
     max-width: 696px;
     font-size: 44px;
     line-height: 1.4;
