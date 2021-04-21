@@ -119,12 +119,23 @@ a:focus {
   padding-bottom: 16px;
 }
 
+.header-button {
+  display: flex;
+  justify-content: space-between;
+}
+
 .menu-button {
   display: inline-flex;
   margin: 0;
   padding: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border: none;
   background-color: transparent;
+}
+
+.menu-button:hover, .menu-button:focus {
+  fill: #2196f3;
 }
 
 .menu-button .icon-close {
@@ -294,7 +305,7 @@ a:focus {
   margin-left: auto;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
   .contacts {
     display: none;
   }
@@ -311,6 +322,7 @@ a:focus {
   .contacts {
     display: flex;
     justify-content: center;
+    margin-left: auto;
   }
   .contacts__item:not(:last-child) {
     margin-right: 30px;
@@ -449,7 +461,7 @@ a:focus {
 .section-features {
   min-width: 480px;
   padding-top: 60px;
-  padding-bottom: 0;
+  padding-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -989,7 +1001,7 @@ a:focus {
 
 @media screen and (min-width: 1200px) {
   .footer-social {
-    text-align: left;
+    justify-content: flex-start;
   }
 }
 

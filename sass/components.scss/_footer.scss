@@ -71,7 +71,7 @@
   text-align: center;
 
   @media screen and (min-width: $desktop-breakpoints) {
-    text-align: left;
+    justify-content: flex-start;
   }
 }
 .footer-social__item {

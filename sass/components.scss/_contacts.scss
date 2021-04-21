@@ -1,7 +1,8 @@
 .contacts {
   margin-left: auto;
 }
-@media screen and (min-width: $tablet-breakpoints) {
+
+@media screen and (max-width: 767px) {
   .contacts {
     display: none;
   }
@@ -17,7 +18,9 @@
   .contacts {
     display: flex;
     justify-content: center;
+    margin-left: auto;
   }
+
   .contacts__item:not(:last-child) {
     margin-right: 30px;
   }
