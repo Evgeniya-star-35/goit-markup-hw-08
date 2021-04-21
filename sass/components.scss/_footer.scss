@@ -6,6 +6,10 @@
   &__logo {
     text-align: center;
     margin-bottom: 20px;
+
+    @media screen and (min-width: $desktop-breakpoints) {
+      text-align: left;
+    }
   }
 }
 .logo__span--secondary {
@@ -13,6 +17,10 @@
 }
 .address {
   text-align: center;
+
+  @media screen and (min-width: $desktop-breakpoints) {
+    text-align: left;
+  }
 }
 .address__item {
   margin-bottom: 8px;
@@ -43,10 +51,20 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $button-hero-text-color;
+
+  @media screen and (min-width: $desktop-breakpoints) {
+    margin-bottom: 20px;
+    margin-top: 0;
+    text-align: left;
+  }
 }
 .footer-social {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
+
+  @media screen and (min-width: $desktop-breakpoints) {
+    text-align: left;
+  }
 }
 .footer-social__item {
   width: 44px;
@@ -80,6 +98,9 @@
 }
 .footer-form {
   text-align: center;
+  @media screen and (min-width: $desktop-breakpoints) {
+    display: inline-flex;
+  }
 }
 .footer-form__input {
   height: 50px;
@@ -128,6 +149,10 @@
   transition-duration: 250ms;
   transition-timing-function: timing-function;
 
+  @media screen and (min-width: $desktop-breakpoints) {
+    margin: 0 0 0 12px;
+  }
+
   &:hover,
   &:focus {
     background-color: #188ce8;
@@ -148,18 +173,23 @@
   margin-left: 10px;
 }
 
-@media screen and (min-width: 768px) {
-  .footer-flex {
+@media screen and (min-width: $tablet-breakpoints) {
+  .widget {
     display: flex;
+    flex-wrap: wrap;
     align-items: baseline;
   }
   .widget__part {
     display: block;
     flex-basis: calc((100% - 30px) / 2);
   }
+  .widget__form-part {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
-
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: $desktop-breakpoints) {
   .widget__part {
     display: block;
     margin-right: 30px;
@@ -197,32 +227,7 @@
 // }
 
 // @media screen and (min-width: $desktop-breakpoints) {
-//   .widget {
-//     display: flex;
-//     align-items: baseline;
-//   }
-//   .widget__part {
-//     display: block;
-//     margin-right: 30px;
-//     flex-basis: calc((50% - 45px) / 2);
-//     text-align: left;
-//   }
-//   .widget__form-part {
-//     display: block;
-//     flex-basis: calc(50%-15px);
-//   }
-//   .widget__join {
-//     display: block;
-//     margin-bottom: 20px;
-//   }
-//   .footer-form {
-//     display: inline-flex;
-//   }
-
-//   .button-footer {
-//     margin-top: 0;
-//     margin-left: 12px;
-//   }
+//
 //   .footer-social {
 //     align-items: start;
 //   }
