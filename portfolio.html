@@ -22,34 +22,30 @@
     <header class="page-header">
       <div class="container page-header__main">
         <nav class="page-header__navigation">
-          <div class="header-button">
-            <a href="./index.html" class="logo page-header__logo">
-              <span class="logo__span logo__span--accent">Web</span
-              ><span class="logo__span logo__span--primary">Studio</span></a
+          <a href="./index.html" class="logo page-header__logo">
+            <span class="logo__span logo__span--accent">Web</span
+            ><span class="logo__span logo__span--primary">Studio</span></a
+          >
+          <button
+            type="button"
+            class="menu-button is-open"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button
+          >
+            <svg
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
             >
-            <button
-              type="button"
-              class="menu-button is-open"
-              aria-expanded="false"
-              aria-controls="menu-container"
-              data-menu-button
-            >
-              <svg
-                width="40"
-                height="40"
-                aria-label="Переключатель мобильного меню"
-              >
-                <use
-                  class="icon-close"
-                  href="./images/sprite.svg#icon-close_40px"
-                ></use>
-                <use
-                  class="icon-menu"
-                  href="./images/sprite.svg#icon-menu"
-                ></use>
-              </svg>
-            </button>
-          </div>
+              <use
+                class="icon-close"
+                href="./images/sprite.svg#icon-close_40px"
+              ></use>
+              <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use>
+            </svg>
+          </button>
+
           <div class="menu-container is-open" data-menu>
             <ul class="menu-container__list">
               <li class="menu-container__item">
