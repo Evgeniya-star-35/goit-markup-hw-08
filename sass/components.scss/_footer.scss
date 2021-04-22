@@ -96,14 +96,13 @@
 
   &:hover,
   &:focus {
-    color: $primery-white-color;
     background-color: $accent-background-color;
   }
 }
 .footer-social__icon {
   width: 20px;
   height: 20px;
-  fill: currentColor;
+  fill: $primery-white-color;
 }
 .footer-form {
   text-align: center;

@@ -27,38 +27,38 @@
     <header class="page-header">
       <div class="container page-header__main">
         <nav class="page-header__navigation">
-          <div class="header-button">
-            <a href="" class="logo page-header__logo">
-              <span class="logo__span logo__span--accent">Web</span
-              ><span class="logo__span logo__span--primary">Studio</span></a
+          <a href="" class="logo page-header__logo">
+            <span class="logo__span logo__span--accent">Web</span
+            ><span class="logo__span logo__span--primary">Studio</span></a
+          >
+          <button
+            type="button"
+            class="menu-button is-open"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button
+          >
+            <svg
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
             >
-            <button
-              type="button"
-              class="menu-button is-open"
-              aria-expanded="false"
-              aria-controls="menu-container"
-              data-menu-button
-            >
-              <svg
-                width="40"
-                height="40"
-                aria-label="Переключатель мобильного меню"
-              >
-                <use
-                  class="icon-close"
-                  href="./images/sprite.svg#icon-close_40px"
-                ></use>
-                <use
-                  class="icon-menu"
-                  href="./images/sprite.svg#icon-menu"
-                ></use>
-              </svg>
-            </button>
-          </div>
-          <div class="menu-container is-open" id="menu-container" data-menu>
+              <use
+                class="icon-close"
+                href="./images/sprite.svg#icon-close_40px"
+              ></use>
+              <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use>
+            </svg>
+          </button>
+
+          <div class="menu-container is-open" data-menu>
             <ul class="menu-container__list">
               <li class="menu-container__item">
-                <a href="./index.html" class="menu-container__link">Студия</a>
+                <a
+                  href="./index.html"
+                  class="menu-container__link menu-container__link--current menu-container__studio"
+                  >Студия</a
+                >
               </li>
               <li class="menu-container__item">
                 <a href="./portfolio.html" class="menu-container__link"
@@ -106,7 +106,7 @@
               </li>
             </ul>
           </div>
-          <ul class="site-nav">
+          <!-- <ul class="site-nav">
             <li class="site-nav__item">
               <a
                 href="./index.html"
@@ -120,7 +120,7 @@
             <li class="site-nav__item">
               <a href="" class="site-nav__link">Контакты</a>
             </li>
-          </ul>
+          </ul> -->
         </nav>
         <ul class="contacts">
           <li class="contacts__item">
