@@ -19,6 +19,7 @@
   }
 }
 .modal {
+  position: relative;
   opacity: 1;
   min-width: 450px;
   height: 609px;
@@ -34,6 +35,23 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: $primary-text-color;
+  }
+}
+.modal__close {
+  @include centeredFlex(flex);
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: fill 250ms $timing-function;
+
+  &:focus,
+  &:hover {
+    fill: $accent-color;
   }
 }
 
@@ -56,40 +74,23 @@
     min-height: 581px;
   }
 }
-.modal__close {
-  @include centeredFlex(flex);
-  cursor: pointer;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background: transparent;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  transition: fill 250ms $timing-function;
+// .modal__close {
+//   @include centeredFlex(flex);
+//   cursor: pointer;
+//   width: 30px;
+//   height: 30px;
+//   border-radius: 50%;
+//   background: transparent;
+//   border: 1px solid rgba(0, 0, 0, 0.1);
+//   transition: fill 250ms $timing-function;
 
-  &:focus,
-  &:hover {
-    fill: $accent-color;
-  }
-}
+//   &:focus,
+//   &:hover {
+//     fill: $accent-color;
+//   }
+// }
 
 @media screen and (min-width: $tablet-breakpoints) {
-  .modal__close {
-    @include centeredFlex(flex);
-    position: absolute;
-    right: 8px;
-    top: 8px;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background: transparent;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    transition: fill 250ms $timing-function;
-
-    &:focus,
-    &:hover {
-      fill: $accent-color;
-    }
-  }
 }
 .form {
   display: flex;

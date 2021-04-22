@@ -18,7 +18,7 @@
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 480px;
+    min-width: 480px;
   }
 }
 
@@ -48,10 +48,6 @@ body {
   font-family: 'Roboto', sans-serif;
   background-color: #ffffff;
   color: #212121;
-}
-
-body .modal-open {
-  overflow: hidden;
 }
 
 p {
