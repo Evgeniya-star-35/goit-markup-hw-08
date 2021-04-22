@@ -33,7 +33,7 @@
 
 @media screen and (min-width: $tablet-breakpoints) {
   .hero__overlay {
-    min-width: 768px;
+    width: 768px;
     height: 400px;
   }
 }
@@ -43,7 +43,7 @@
     padding-bottom: 200px;
   }
   .hero__overlay {
-    min-width: 1600px;
+    width: 1600px;
     height: 600px;
   }
   .hero__title {
@@ -88,4 +88,5 @@
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+  color: $primery-white-color;
 }

@@ -18,7 +18,7 @@
 
 @media screen and (min-width: 480px) {
   .container {
-    min-width: 480px;
+    width: 480px;
   }
 }
 
@@ -464,7 +464,7 @@ a:focus {
 
 @media screen and (min-width: 768px) {
   .hero__overlay {
-    min-width: 768px;
+    width: 768px;
     height: 400px;
   }
 }
@@ -475,7 +475,7 @@ a:focus {
     padding-bottom: 200px;
   }
   .hero__overlay {
-    min-width: 1600px;
+    width: 1600px;
     height: 600px;
   }
   .hero__title {
@@ -520,6 +520,7 @@ a:focus {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+  color: #ffffff;
 }
 
 .section-features {
@@ -1429,7 +1430,7 @@ a:focus {
 
 .modal-checkbox__link {
   color: #2196f3;
-  text-decoration: underline;
+  text-decoration-line: underline;
 }
 
 .modal-checkbox__icon {

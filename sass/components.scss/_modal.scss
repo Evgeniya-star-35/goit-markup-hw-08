@@ -193,7 +193,8 @@
 
 .modal-checkbox__link {
   color: $accent-color;
-  text-decoration: underline;
+  text-decoration-line: underline;
+  // text-decoration: underline;
 }
 .modal-checkbox__icon {
   display: inline-block;
