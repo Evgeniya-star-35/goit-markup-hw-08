@@ -1232,6 +1232,8 @@ a:focus {
   position: fixed;
   top: 0;
   left: 0;
+  padding: 94px 15px;
+  overflow-y: scroll;
   opacity: 1;
   transition: opasity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 100%;
@@ -1397,11 +1399,13 @@ a:focus {
 }
 
 .modal-checkbox {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 30px;
 }
 
-.modal-checkbox__label {
-  display: flex;
+.modal-checkbox__text {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.03em;
@@ -1409,7 +1413,7 @@ a:focus {
 }
 
 @media screen and (min-width: 1200px) {
-  .modal-checkbox__label {
+  .modal-checkbox__text {
     font-size: 14px;
     line-height: 1.71;
   }
@@ -1425,7 +1429,7 @@ a:focus {
   justify-content: center;
   width: 16px;
   height: 15px;
-  margin-right: 8.38px;
+  margin-right: 8px;
   border-radius: 2px;
   border: 1px solid #000000;
 }
@@ -1436,6 +1440,12 @@ a:focus {
   background-image: url(../images/foto3/check.svg);
   background-size: contain;
   background-origin: border-box;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-checkbox__icon {
+    margin-right: 8.38px;
+  }
 }
 
 .modal-button {

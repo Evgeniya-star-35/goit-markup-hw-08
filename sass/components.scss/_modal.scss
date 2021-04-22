@@ -2,6 +2,8 @@
   position: fixed;
   top: 0;
   left: 0;
+  padding: 94px 15px;
+  overflow-y: scroll;
   opacity: 1;
   transition: opasity 250ms $timing-function;
   width: 100%;
@@ -170,12 +172,10 @@
   }
 }
 .modal-checkbox {
-  // @include centeredFlex(inline-flex);
+  @include centeredFlex(inline-flex);
   margin-bottom: 30px;
 
-  &__label {
-    display: flex;
-    // align-items: center;
+  &__text {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.03em;
@@ -183,7 +183,7 @@
   }
 }
 @media screen and (min-width: $desktop-breakpoints) {
-  .modal-checkbox__label {
+  .modal-checkbox__text {
     font-size: 14px;
     line-height: 1.71;
   }
@@ -198,7 +198,7 @@
   justify-content: center;
   width: 16px;
   height: 15px;
-  margin-right: 8.38px;
+  margin-right: 8px;
   border-radius: 2px;
   @include bordered(#000000);
 
@@ -211,6 +211,11 @@
   }
 }
 
+@media screen and (min-width: $desktop-breakpoints) {
+  .modal-checkbox__icon {
+    margin-right: 8.38px;
+  }
+}
 .modal-button {
   padding: 10px 56px;
   cursor: pointer;
