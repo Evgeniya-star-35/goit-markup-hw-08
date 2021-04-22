@@ -1,10 +1,10 @@
 .section-features {
-  min-width: 480px;
   padding-top: 60px;
   padding-bottom: 60px;
 
   @media screen and (min-width: $desktop-breakpoints) {
     padding-top: 94px;
+    padding-bottom: 0;
   }
 }
 .features__item:not(:last-child) {
