@@ -114,12 +114,6 @@ a:focus {
   border-bottom: 1px solid #e5e5e5;
 }
 
-@media screen and (min-width: 768px) {
-  .page-header {
-    position: static;
-  }
-}
-
 .page-header__logo {
   padding-top: 16px;
   padding-bottom: 16px;

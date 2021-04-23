@@ -1,10 +1,6 @@
 .page-header {
   position: relative;
   border-bottom: 1px solid $bg-color;
-
-  @media screen and (min-width: $tablet-breakpoints) {
-    position: static;
-  }
 }
 
 .page-header__logo {
