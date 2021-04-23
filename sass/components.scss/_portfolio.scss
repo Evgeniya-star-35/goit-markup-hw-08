@@ -57,8 +57,8 @@
 
 .card-set__item:not(:last-child) {
   @media screen and (max-width: 767px) {
-  margin-bottom: 30px;
-}
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: $tablet-breakpoints) and (max-width: 1199px) {
@@ -127,16 +127,17 @@
       width: 306px;
     }
   }
+}
 
-  @media screen and (min-width: $desktop-breakpoints) {
-    .overlay-foto {
+@media screen and (min-width: $desktop-breakpoints) {
+  .overlay-foto {
     width: 370px;
 
     &__text {
       width: 322px;
     }
   }
-
+}
 
 .overlay-foto__card {
   @include centeredFlex(flex);
@@ -187,5 +188,10 @@
     line-height: 1.87;
     letter-spacing: 0.03em;
     color: $secondary-text-color;
+  }
+}
+@media screen and (min-width: $tablet-breakpoints) and (max-width: 1199px) {
+  .card-set__item:first-child .description {
+    padding-bottom: 56px;
   }
 }
