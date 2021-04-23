@@ -204,6 +204,7 @@ a:focus {
 
 @media screen and (min-width: 768px) {
   .menu-button,
+  .menu-container,
   .menu-container.is-open {
     display: none;
   }
@@ -389,7 +390,6 @@ a:focus {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts {
     padding-top: 21px;
-    padding-bottom: 21px;
   }
 }
 

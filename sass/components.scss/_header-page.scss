@@ -84,6 +84,7 @@
 
 @media screen and (min-width: $tablet-breakpoints) {
   .menu-button,
+  .menu-container,
   .menu-container.is-open {
     display: none;
   }
