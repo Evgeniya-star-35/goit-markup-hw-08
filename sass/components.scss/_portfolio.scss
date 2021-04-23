@@ -103,19 +103,42 @@
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
 }
+.overlay-foto__card {
+  @include centeredFlex(flex);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform: translatey(100%);
+  transition-property: transform background-color;
+  transition-duration: 250ms;
+  transition-timing-function: $timing-function;
 
-.overlay-foto {
-  position: relative;
-  overflow: hidden;
-  width: 450px;
+  .card-set__link:hover &,
+  .card-set__link:focus & {
+    transform: translatey(0);
+    background-color: rgba(33, 150, 243, 0.9);
+  }
+}
+.overlay-foto__img {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (min-width: $mobile-breakpoints) {
+  .overlay-foto {
+    position: relative;
+    overflow: hidden;
+    width: 450px;
 
-  &__text {
-    width: 322px;
-    margin: 0;
-    font-size: 18px;
-    line-height: 1.56;
-    letter-spacing: 0.03em;
-    color: $primery-white-color;
+    &__text {
+      width: 322px;
+      margin: 0;
+      font-size: 18px;
+      line-height: 1.56;
+      letter-spacing: 0.03em;
+      color: $primery-white-color;
+    }
   }
 }
 
@@ -136,25 +159,6 @@
     &__text {
       width: 322px;
     }
-  }
-}
-
-.overlay-foto__card {
-  @include centeredFlex(flex);
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  transform: translatey(100%);
-  transition-property: transform background-color;
-  transition-duration: 250ms;
-  transition-timing-function: $timing-function;
-
-  .card-set__link:hover &,
-  .card-set__link:focus & {
-    transform: translatey(0);
-    background-color: rgba(33, 150, 243, 0.9);
   }
 }
 
