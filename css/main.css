@@ -734,6 +734,26 @@ a:focus {
   color: #757575;
 }
 
+.team-cardset__thamb {
+  width: 450px;
+}
+
+@media screen and (min-width: 768px) {
+  .team-cardset__thamb {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-cardset__thamb {
+    width: 270px;
+  }
+}
+
+.team-cardset__img {
+  width: 100%;
+}
+
 .animate__rotateOut {
   animation-name: rotateOut;
   animation-duration: 3500ms;

@@ -81,6 +81,19 @@
   color: $secondary-text-color;
 }
 
+.team-cardset__thamb {
+  width: 450px;
+
+  @media screen and (min-width: $tablet-breakpoints) {
+    width: 354px;
+  }
+  @media screen and (min-width: $desktop-breakpoints) {
+    width: 270px;
+  }
+}
+.team-cardset__img {
+  width: 100%;
+}
 .animate__rotateOut {
   animation-name: rotateOut;
   animation-duration: 3500ms;
