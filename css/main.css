@@ -1518,10 +1518,10 @@ a:focus {
 
 @media screen and (max-width: 767px) {
   .menu-modal {
-    position: absolute;
-    top: 48%;
+    position: fixed;
+    top: 50%;
     left: 50%;
-    min-width: 480px;
+    width: 100%;
     min-height: 796px;
     padding: 48px 40px;
     transform: translate(-50%, -50%) scale(1);
@@ -1544,8 +1544,8 @@ a:focus {
   cursor: pointer;
   right: 15px;
   top: 10px;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   margin: 0;
   padding: 0;
   border: none;
