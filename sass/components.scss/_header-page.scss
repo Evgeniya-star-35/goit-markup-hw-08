@@ -1,6 +1,10 @@
 .page-header {
   position: relative;
   border-bottom: 1px solid $bg-color;
+
+  @media screen and (min-width: $tablet-breakpoints) {
+    position: static;
+  }
 }
 
 .page-header__logo {
@@ -62,7 +66,7 @@
 .menu-container {
   display: none;
   position: absolute;
-  top: 100%;
+  top: 50%;
   left: 0;
   width: 100%;
   padding-top: 48px;
@@ -79,7 +83,8 @@
 }
 
 @media screen and (min-width: $tablet-breakpoints) {
-  .menu-button {
+  .menu-button,
+  .menu-container.is-open {
     display: none;
   }
 }
@@ -108,57 +113,7 @@
     color: $accent-color;
   }
 }
-
-@media screen and (min-width: $tablet-breakpoints) {
-  .menu-container__link {
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    font-size: 14px;
-    line-height: 1.14;
-    color: $primary-text-color;
-  }
-  .menu-container__item:not(:last-child) {
-    margin-right: 50px;
-  }
-  .menu-container__link--current {
-    color: $accent-color;
-  }
-  .menu-container__studio {
-    position: relative;
-    display: block;
-    padding-bottom: 32px;
-    padding-top: 32px;
-
-    &::after {
-      position: absolute;
-      content: '';
-      left: 0;
-      bottom: -1px;
-      width: 100%;
-      height: 4px;
-      background: #2196f3;
-      border-radius: 2px;
-    }
-  }
-  .menu-container__portfolio {
-    position: relative;
-    display: block;
-    padding-bottom: 32px;
-    padding-top: 32px;
-
-    &::after {
-      position: absolute;
-      content: '';
-      left: 0;
-      bottom: -1px;
-      width: 100%;
-      height: 4px;
-      background: #2196f3;
-      border-radius: 2px;
-    }
-  }
-
+@media screen and (max-width: 767px) {
   .mobile-social {
     display: inline-flex;
 
@@ -179,7 +134,8 @@
       background-image: url('../../images/line.svg');
     }
   }
-
+}
+@media screen and (max-width: 767px) {
   .contacts-mobile {
     margin-bottom: 64px;
   }

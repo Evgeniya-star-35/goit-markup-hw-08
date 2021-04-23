@@ -27,6 +27,8 @@
 }
 @media screen and (min-width: $tablet-breakpoints) {
   .contacts__link {
+    display: inline-flex;
+    align-items: center;
     font-weight: 500;
     font-size: 12px;
     line-height: 1.67;
@@ -36,16 +38,17 @@
     transition-duration: 250ms;
     transition-timing-function: $timing-function;
   }
+  .contacts__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
 @media screen and (min-width: $desktop-breakpoints) {
   .contacts__link {
-    display: inline-flex;
-    align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
     font-weight: 500;
-    font-size: 12px;
-    line-height: 1.67;
+    font-size: 14px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
     color: $secondary-text-color;
     transition-property: color;
