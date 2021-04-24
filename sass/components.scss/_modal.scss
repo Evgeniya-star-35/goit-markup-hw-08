@@ -62,9 +62,11 @@
     transition: opasity 250ms $timing-function;
   }
   .modal {
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
+    width: 450px;
+    height: 609px;
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms $timing-function opasity 250ms $timing-function;
   }
